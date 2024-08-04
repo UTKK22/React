@@ -3,7 +3,7 @@ import { useContext, useState, useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import styles from "./GenrePage.module.css";
-import defaultGenres from "../data/genres";
+import {defaultGenres} from "../data/genres";
 
 function GenrePage() {
 	const [error, setError] = useState();
@@ -33,7 +33,7 @@ function GenrePage() {
 		if (selectedGenres.length < 3) {
 			setError(true);
 		} else {
-			// navigate("/carousel");
+			navigate("/carousel");
 		}
 	};
 

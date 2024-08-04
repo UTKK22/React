@@ -7,13 +7,13 @@ const MINUTES_STEP = 60;
 const SECONDS_STEP = 1;
 
 function TimerWidget() {
-	const [totalSeconds, setTotalSeconds] = useState(10);
+	const [totalSeconds, setTotalSeconds] = useState(60);
 	const [isRunning, setIsRunning] = useState(false);
 
 	useEffect(() => {
 		if (isRunning) {
 			const interval = setInterval(() => {
-				const newTotalSeconds = totalSeconds - 1 < 0 ? 0 : totalSeconds - 1;
+				// const newTotalSeconds = totalSeconds - 1 < 0 ? 0 : totalSeconds - 1;
 				// setState
 				// Approach1
 				// newValue = f(oldValue)

@@ -19,11 +19,11 @@
 .configure {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
 }
 
 .cell {
     display: flex;
     flex-direction: column;
+    border: 2px red solid;
 }
